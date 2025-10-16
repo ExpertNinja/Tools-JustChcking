@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #020B43;
+  color: #FFFFFF;
+  position: fixed;
+  top: 70px; /* Adjust for header height */
+  left: 0;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  margin-top: 70px; /* Adjust for header height */
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.admin-path-config {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-path-config h2 {
+  color: #020B43;
+  margin-bottom: 20px;
+}
+
+.path-config-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.path-config-table th,
+.path-config-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #525355;
+}
+
+.path-config-table th {
+  background-color: #C3DEFA;
+  color: #020B43;
+  font-weight: bold;
+}
+
+.path-config-table td {
+  color: #525355;
+}
+
+.path-config-table tr:hover {
+  background-color: #CDF4BF;
+}
+
+.call-api-btn {
+  background-color: #38D200;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.call-api-btn:hover {
+  background-color: #0473EA;
+}
+
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #38D200;
+}
